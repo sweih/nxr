@@ -1,0 +1,34 @@
+/b/Congratulations! You have finished the installation of N/X 5.0!//b/
+
+
+/b/The next steps//b/
+ 
+ - Check the security hints in the <a href="./docs/NXInstallEN.html" target="_blank">installation-documentation</a>. YOU are responsible for the safety and security of your system!
+ - Delete the install.php and the "_installer"- folder!
+
+ - Read the <a href="http://www.nxsystems.org/manuals/NXGettingStartedEN.html" target="_blank">getting started manual</a>.
+
+ - login into the system, by going to <a href="./cms/index.php" target="_blank">./cms/index.php</a>
+   
+      Username: Administrator
+      Password: Administrator
+      
+ - View the private-edit version of your website here: <a href="./wwwdev/" target="_blank">./wwwdev</a> 
+ - View the public version of your website here: <a href="./www/" target="_blank">./www</a> 
+
+ - Change the password and edit all other users by going to Adminsitration -> Access
+ - Run the configuration checker: <a href="./cms/checkconfiguration.php" target="_blank">./cms/checkconfiguration.php</a>
+ - Delete the configuration-checker-script afterwards.
+
+ - Have fun :-)
+
+
+
+/b/Security//b/
+
+We strongly recommend, that you make the installation safe by creating an 
+additional Apache-Authentification for the /nx/cms folder and all subfolders!
+Therefore you need to create an .htaccess and .htpasswd file. You may use a common
+login for all users of the system. However N/X is considered to be safe in the final
+version, this is just for making sure, that you do not run into a securtity 
+problem, if there is a bug in the N/X backoffice.

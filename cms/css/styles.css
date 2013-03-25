@@ -1,0 +1,295 @@
+body, td, div, p {
+	 font-family: Arial;
+	 color: #000000;
+	 font-size:11pt;
+}
+
+a.activelink {
+  color:#ff0000;	
+}
+
+a:visited {
+  color:#0000ff;
+}
+
+/** Standard-Styles */
+
+h1, .h1 {
+  font-size:120%;
+  color: #000000;
+  font-weight:bold;
+}
+
+h2, .h2 {
+  font-size:120%;
+  color: #000000;  
+}
+
+h3, .h3 {
+  font-size: 84%;
+  color: #000000;
+  font-weight: bold;
+}
+/** End of Standard Styles */
+
+/** Form CSS */
+
+
+.line {
+  background-color:#6699cc;
+  height: 2px;
+}
+
+.thinline {
+  background-color:#6699cc;
+  height: 1px;
+}
+
+.headline {
+  background-color: #bbddff;
+  padding: 4px;
+}
+
+.headbox {
+  background-color: #bbddff;
+  border-top: 1px solid #336699;  
+  padding:3px;  
+}
+
+.headbox2 {
+  background-color: #f0f0f0;
+  border: 1px solid #c0c0c0;
+  padding:2px;
+}
+
+.standard {  
+  background-color:#e8f1fa;
+  font-weight:bold;
+  padding:4px;
+}
+
+.standardlight {
+  color:#333333;
+  background-color:#e8f1fa;
+  padding:4px;
+}
+
+.description {
+  color: #333333;
+  font-size:11px;
+  background-color:#e8f1fa;
+  padding:0px 4px 6px 4px;
+}
+  
+.error {
+  padding:4px;
+  font-weight:bold;
+  background-color:#ffccff;
+}
+
+.toolbar {
+  background-color: #e8f1fa;
+  padding: 2px;
+}
+
+.headererror {
+  font-weight:bold;
+  font-size: 90%;
+  background-color:#ffccff;
+}
+
+.headersuccess {
+  font-weight:bold;
+  font-size: 90%;
+  background-color:#c4f3dc;
+}
+
+.headerinformation {
+  font-weight:bold;
+  font-size: 100%;
+  background-color:#fce669;
+}
+
+.headeryellow {
+  font-weight:bold;
+  font-size: 100%;
+  background-color:#ffffcc;
+}
+
+
+.headergrey {
+  font-weight:bold;
+  font-size: 100%;
+  background-color:#f0f0f0;
+}
+
+.boxed {
+  padding: 0px 10px 10px 10px;
+  border-bottom: 1px dotted #c0c0c0;
+  border-left: 1px dotted #c0c0c0;
+  border-right: 1px dotted #c0c0c0;
+}
+
+.underlined {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+
+/** End of Form CSS */
+
+/** Grid CSS */
+.grid {
+  background-color:#e8f1fa;
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:2px;
+  padding-right:2px;
+  cursor:pointer;
+  border-bottom:1px solid #e0e0e0;
+}
+
+.gridtitle {
+  background-color:#bbddff;
+  font-weight:bold;
+  padding-top:4px;
+  padding-bottom:4px;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+
+/** End of Grid CSS */
+
+/** CSS for placing forms */
+.contentcenter {
+  clear:both;
+  margin: 0 1em 0 1em;
+  width:600px;
+}
+
+.contentright {
+  float:right;
+  margin: 0em 0.5em 0 1em;
+  width:150px;
+  font-size: 100%;
+}
+
+.contentleft {
+  float:left;
+  margin: 0 1em 0 0.2em;
+  width: 200px;  
+}
+
+div#Content {    
+    margin: 0em 1em 1em 1em;
+    width: 60%;
+    padding: 0 1em;
+    float:left;
+}
+
+* html div#Content {
+    height: 1em;  
+}
+
+/** End of form-placing CSS */
+
+
+/** CSS for tab-sheets*/
+td.activeTab, td.inactiveTab {
+  text-align:middle;
+  text-align:top;
+  color:#efefef;
+}
+
+td.activeTab {
+  font-weight:bold;
+  color:white;
+  background-color:#6699cc;
+}
+
+td.inactiveTab {
+  background-color:#efefef;
+  cursor: pointer;
+}
+
+div.inactive3 {
+  border-top: 1px solid #cccccc;
+}
+
+div.inactiveTabText {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 0px 1em 2px;
+  color: blue;
+  white-space: nowrap;
+}
+
+div.inactiveTabText a, div.inactiveTabText a:visisted {
+  text-decoration: none;
+  color: blue;
+}
+
+
+div.activeTabText a, div.activeTabText a:visited {
+  padding: 0px 0px 2px;
+  color: white;
+  white-space: nowrap;
+  text-decoration:none;
+}
+
+a.activeTabText {
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+  padding: 0px 1em 2px;
+  color: white;
+  white-space: nowrap;
+  text-decoration:none;
+}
+
+a.thigh {
+  color:white;
+  font-weight:bold;
+}
+
+#subtabs {
+	  background-color:#6699cc;
+	  height:4px;
+	  padding:1 4px;
+}
+
+#subTabs td {
+  color: #fff;
+  padding: 4px;
+  padding-left:8px;
+  background: #6699cc;
+  white-space: nowrap;
+}
+
+a.activeText, a.activeText:visited {
+  font-weight: bold;
+  color: #cbe5ff;
+  display: inline;
+  text-decoration:none
+}
+
+#subTabs span.inactiveText {
+  color: #fff;
+  margin: 0 1px;
+  display: inline;
+  text-decoration:none;
+}
+
+#subTabs span.inactiveText a {
+  color: #fff;
+}
+
+/** end of tabsheet css */
+
+/** CSS for tree menues */
+.treemenu {
+  font-size:90%;
+  text-decoration:none;
+  color: #000000;
+}
+
+/** end of CSS for treemenues */

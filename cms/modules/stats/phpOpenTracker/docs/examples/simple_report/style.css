@@ -1,0 +1,38 @@
+a:link {
+color: #2564c4;
+}
+
+a:visited {
+color: #2564c4;
+}
+
+a:hover {
+color: #1d4c93;
+text-decoration: underline;
+}
+
+a:active {
+color: #2564c4;
+}
+
+body {
+background-color: #ffffff;
+color: #000000;
+margin-left: 0;
+margin-right: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+body, td {
+font-family: Arial, Verdana, Helvetica, sans-serif;
+font-size: 12px;
+}
+
+dd, dl, li, p {
+text-align: justify;
+}
+
+dd, dl {
+width: 500;
+}

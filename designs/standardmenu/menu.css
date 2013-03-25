@@ -1,0 +1,122 @@
+body,td,p { color: #000000;
+font-family:  Arial, sans-serif;
+font-size: 11pt;
+line-height: 14pt;
+margin: 0px;
+padding: 0px;
+}
+
+/*- Sets the width of the page  -*/
+#maindiv {
+  align:center;
+  width:1000px;
+  padding: 10px 20px 10px 20px;
+}
+
+/*- Sidebar draws the bar on the right with ads or teasers. the width of sidebar and content should be smaller than maindiv.width */
+#sidebar {
+  width:160px;
+  padding-left:10px;
+  padding-top:50px;
+}
+
+#content {
+  width: 800px;  
+  padding-left:5px;
+}
+
+
+
+a {
+color: #3333ee;
+text-decoration: underline;
+}
+
+a:hover {color: #3333ee;
+text-decoration: underline;}
+
+
+.head1 {
+padding-top: 5px;;
+font-size: 22pt;
+line-height: 26pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+.head2 {
+font-size: 18pt;
+line-height:24pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+li.sitemap {
+  padding:0px;
+  margin:0px;
+}
+
+ul.sitemap {
+  padding:0px 0px 0px 10px;
+  margin:0px 0px 0px 20px;
+}
+
+/* CSS Stylesheet for the standard-menu of N/X. Any changes to colors and width must be done here. */
+/* --  Level 1 -- */
+#navbox {margin:0px; padding: 0px; list-style: none; width: 190px; background-color:#e0e0e0;}
+#navbox ul {margin:0px; padding:1px 0px 0px; 0px; list-style:none;}
+#navbox li {display:inline; margin:0px; font-weight: bold; padding: 1px 0px 0px 0px; list-style:none;width:190px;}
+#navbox li a {display: block; text-decoration: none; padding: 4px 0 4px 15px;  background-color: #999999;color:#ffffff;width:180px;}
+#navbox li a:hover, #navbox li a.menuactive:hover {background-color: #F7941C; color: #fff;}
+
+/* --  Level 2 -- */
+#navbox li ul {margin: 0px 0 0px 0; padding: 1px 0 0px 0; list-style: none; width: 190px;}
+#navbox li ul li  {position: relative; font-weight:normal; padding-bottom: 1px;}
+#navbox li ul li.bottom  {position: relative; font-weight:normal; padding-bottom: 1px; margin-bottom: -1px;}
+#navbox li ul li a {display: block; text-decoration: none; padding: 4px 0 4px 25px; background-color: #aaaaaa;color:#ffffff;width:170px;}
+#navbox li ul li a:hover, #navbox li ul li a.menuactive:hover {background-color: #F7941C; color: #fff;}
+
+/* --  Level 3 -- */
+#navbox li ul li ul {margin: 0px 0 0px 0; padding: 1px 0 0px 0; list-style: none; width: 190px;}
+#navbox li ul li ul li  {position: relative; font-weight:normal; padding-bottom: 1px; }
+#navbox li ul li ul li.bottom  {position: relative; font-weight:normal; padding-bottom: 1px; margin-bottom: -1px;}
+#navbox li ul li ul li a {display: block; text-decoration: none; padding: 4px 0 4px 30px;  background-color: #cccccc;color:#000000;width:190px;}
+#navbox li ul li ul li a:hover, #navbox li ul li ul li a.menuactive:hover {background-color: #F7941C;}
+
+/* --  Level 4 -- */
+#navbox li ul li ul li ul{margin: 0px 0 0px 0; padding: 1px 0 0px 0; list-style: none; width: 190px;}
+#navbox li ul li ul li ul li  {position: relative; font-weight:normal; padding-bottom: 1px; }
+#navbox li ul li ul li ul li.bottom  {position: relative; font-weight:normal; padding-bottom: 1px; margin-bottom: -1px;}
+#navbox li ul li ul li ul li a {display: block; text-decoration: none; padding: 4px 0 4px 35px; background-color: #eeeeee;color:#000000;}
+#navbox li ul li ul li ul li a:hover, #navbox li ul li ul li ul li a.menuactive:hover {background-color: #F7941C;}
+
+#navbox a.menuactive {background-color: #F7941C; color: #ffffff;}
+#navheader { background-color:#999999; height:25px;}
+
+#navheader a {
+  color: #ffffff;
+  font-size:12px;
+}
+
+#footerline {
+  clear:both;
+  border-top: 1px solid #e0e0e0;
+  padding: 5px;  
+}
+
+#footerline table td {
+  color: #666666;
+  font-size: 12px;
+}
+
+
+h1 {
+padding-top: 5px;;
+font-size: 18pt;
+line-height: 24pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+h2 {
+font-size: 14pt;
+line-height:18pt;
+font-family: Arial, sans-serif;
+text-align: left;}

@@ -1,0 +1,40 @@
+/b/Introduction://b/
+N/X is a Web Content Management System written entirely in php. Its requirements are:
+
+ - a MySQL 4.0 database or later
+ - Apache Webserver 1.3, 2.0 or 2.2
+ - php5. some php4-Version may work also, but are not officially supported.
+ 
+/b/Before installation//b/
+ 
+ - Copy all files in this package onto your webserver
+ - Make sure, all files are complete and up to date
+ - Make sure, you have access to the following folders:
+   
+
+
+
+   /nx5     (Read, Execute)
+   /nx5/www (Read, Write) on all subfolders!
+   /nx5/wwwdev (Read, Write) on all subfolders!
+
+
+   To set these directory permissions, you may use your ftp-program or 
+   connect to your server via ssh or telnet.
+   
+   You can change premissions with following commands:
+   
+	cd /usr/www/htdocs/nx4.1/
+	chown -R wwwrun:nogroup .
+	find . -type d -print0 | xargs -0 chmod 700
+	find . -type f -print0 | xargs -0 chmod 600
+	chmod -R u+rwX {cms/cache,wwwdev,www}
+
+
+  More Detailed information is available from the <a href="./docs/NXInstallEN.html" target="_blank">installation-documentation</a>.
+ 
+ 
+/b/Updating from earlier versions://b/
+
+Please do not use this script. It may cause errors and delete data!
+Updating from N/X 2002 must be done by hand. Please contact us, if you need instructions.

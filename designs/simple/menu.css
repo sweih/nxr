@@ -1,0 +1,117 @@
+body,td,p { color: #000000;
+font-family:  Arial, sans-serif;
+font-size: 11pt;
+line-height: 14pt;
+margin: 0px;
+padding: 0px;
+}
+
+body {
+background-image: url('./gardient.gif');
+background-repeat:repeat-x;
+}
+
+/*- Sets the width of the page  -*/
+#maindiv {
+  align:center;
+  width:1000px;
+  padding: 10px 20px 10px 20px;
+}
+
+/*- Sidebar draws the bar on the right with ads or teasers. the width of sidebar and content should be smaller than maindiv.width */
+#sidebar {
+  width:160px;
+  padding-left:10px;
+  padding-top:50px;
+}
+
+#content {
+  width: 800px;  
+  padding-left:5px;
+}
+
+
+
+a {
+  color: #666666;
+  text-decoration: underline;
+}
+
+a:hover {color: #666666;
+text-decoration: underline;}
+
+
+.head1 {
+padding-top: 5px;;
+font-size: 22pt;
+line-height: 26pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+.head2 {
+font-size: 18pt;
+line-height:24pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+li.sitemap {
+  padding:0px;
+  margin:0px;
+}
+
+ul.sitemap {
+  padding:0px 0px 0px 10px;
+  margin:0px 0px 0px 20px;
+}
+
+/* CSS Stylesheet for the standard-menu of N/X. Any changes to colors and width must be done here. */
+/* --  Level 1 -- */
+#navbox {margin:0px; padding: 0px; list-style: none; width: 190px;border-left:1px solid #cccccc;}
+#navbox ul {margin:0px; padding:1px 0px 0px; 0px; list-style:none;font-size:12px;}
+#navbox li {display:inline; margin:0px; padding: 1px 0px 0px 0px; list-style:none;width:190px;}
+#navbox li a {display: block; border-bottom:1px solid #ffffff; padding: 2px 0 2px 15px; width:180px;}
+#navbox li a:hover, #navbox li a.menuactive:hover {border-bottom:1px solid #cccccc;}
+
+/* --  Level 2 -- */
+#navbox li ul {margin: 0px 0 0px 0; padding: 1px 0 0px 0; list-style: none; width: 190px;}
+#navbox li ul li  {position: relative; font-weight:normal; padding-bottom: 1px;}
+#navbox li ul li.bottom  {position: relative; font-weight:normal; padding-bottom: 1px; margin-bottom: -1px;}
+#navbox li ul li a {display: block; text-decoration: none; padding: 2px 0 2px 25px;width:170px;}
+#navbox li ul li a:hover, #navbox li ul li a.menuactive:hover {border-bottom:1px  solid #cccccc;}
+
+
+#navbox a.menuactive {border-bottom:1px solid #cccccc; background-color:#f0f0f0;}
+
+
+
+#footerline {
+  clear:both;
+  border-top: 1px solid #e0e0e0;
+  padding: 5px;  
+}
+
+#footerline table td {
+  color: #666666;
+  font-size: 12px;
+}
+
+
+h1 {
+padding-top: 5px;;
+font-size: 18pt;
+line-height: 24pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+h2 {
+font-size: 14pt;
+line-height:18pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+td.border {
+  border: 1px solid #cccccc;
+  padding:2px;
+  font-size:12px;
+  color:#666666;
+}

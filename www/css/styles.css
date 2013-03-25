@@ -1,0 +1,60 @@
+body,td,p { color: #000000;
+font-family:  Arial, sans-serif;
+font-size: 11pt;
+line-height: 14pt;
+margin: 0px;
+padding: 0px;
+}
+
+/*- Sets the width of the page  -*/
+#maindiv {
+  align:center;
+  width:1000px;
+  padding: 10px 20px 10px 20px;
+}
+
+/*- Sidebar draws the bar on the right with ads or teasers. the width of sidebar and content should be smaller than maindiv.width */
+#sidebar {
+  width:160px;
+  padding-left:10px;
+  padding-top:50px;
+}
+
+#content {
+  width: 800px;  
+  padding-left:5px;
+}
+
+
+
+a {
+color: #3333ee;
+text-decoration: underline;
+}
+
+a:hover {color: #3333ee;
+text-decoration: underline;}
+
+
+.head1 {
+padding-top: 5px;;
+font-size: 22pt;
+line-height: 26pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+.head2 {
+font-size: 18pt;
+line-height:24pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+li.sitemap {
+  padding:0px;
+  margin:0px;
+}
+
+ul.sitemap {
+  padding:0px 0px 0px 10px;
+  margin:0px 0px 0px 20px;
+}

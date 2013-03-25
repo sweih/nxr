@@ -1,0 +1,49 @@
+==================================
+N/X Change-Log
+==================================
+
+2005/06/01, sweih (Mozilla RichText Editor!, Bugfixes)
+- did some bugfixes and enhancements to the $cds->layout object. Media-attributes are now available for stylesheets
+- made html-headers xhtml compatible.
+- updated the richtext-editor to fckeditor 2.0 i.e. that mozilla is supported for editing now!
+
+2005/05/08, sweih (Database update required):
+- Finished function for importing multipages to channels. Go to articles-menu and select the Import Channel button
+- Cosmetic changes on the select box
+- added new configuration variable for setting an individual startpage after login. New default ist Sitepagebrowser.
+- Changed length of Linktext in link-plugin. Therefore you must run the SQL-Update-Skript.
+- fixed problem with ordering of channels. Therefore you must run the SQL-Update-Skript for cleanup.
+- enhanced the calendar. Has now richedit-textbox. Note, that you must apply changes to your old db-model manually.
+  -> description becomes an longtext.
+- corrected zip-upload bug with bulkimage and firefox.
+- backup is storing database structure also. Handle with care, as indices may not be stored correctly. So you may need to
+  run an sql script for creating the indices after restore.
+- removed the config option $c["staticMenues"] = false; Will not be part of N/X 4.0
+- added positional ordering for channels. Therefore you must update the database.
+
+
+2004/11/18 - sweih
+- fixed a lot of bugs over the last weeks.
+- added new module for switching to maintenance mode in backend, www and wwwdev.
+
+
+2004/10/05 - sweih
+- removed settings.inc.php and replaced with config.inc.php and deployment.inc.php
+  for easier configuration.
+- made several bugfixes
+- corrected cleandatabasedata.sql
+- added new demohomepage to cvs
+- deleted old files
+- new plugin administration modul
+
+2004/09/22 - sweih
+- updated menu-javascript to version 1.25. should support safari now.
+- added support for menu-icons and created some new icons for testing.
+
+2004/09/10 - sweih
+- fixed bugs in import and export wizzards
+
+2004/09/09 - sweih
+- Added function for launching a channel in channel-administration
+- Added function for launching all channels in "Maintenance->Launch whole site"
+- New Plugin-Type 4: Adding filters to text-output for parsing texts with custom filters (email obfuscation, etc.)

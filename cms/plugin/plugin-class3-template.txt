@@ -1,0 +1,43 @@
+<?
+
+	/**
+	 * XXXXXXX PlugIn
+	 * Version 1.0
+	 *
+	 * @package Plugins
+	 */
+	class pgnXXXXXXX extends Plugin {
+
+		
+        
+		var $pluginType = 3; //CDS-API-Extension
+        
+		/**
+		   * This function is used for drawing the html-code out to the templates.
+		   * It just returns the code
+		   * @param 		string	Optional parameters for the draw-function. There are none supported.
+		   * @return		string	HTML-CODE to be written into the template.
+		   */
+		function draw($param = "") {
+			return new XXXXXXX_API();
+		}
+	
+
+		/**
+		   * Specifies information for installation and deinstallation of the plugin.
+		   */
+		function registration() {
+			global $auth;	
+			if ($auth->checkPermission("ADMINISTRATOR")) {
+				Plugin::registration();
+				$this->name = "XXXXXXX";
+				$this->description = "XXXXXXX Description";
+				$this->version = 1;
+				$mtid = nextGUID(); // getting next GUID.
+				global $source, $classname; // the source path has to be provided by the calling template
+				$modId = nextGUID();
+				$this->installHandler->addDBAction("INSERT INTO modules (MODULE_ID, MODULE_NAME, DESCRIPTION, VERSION, MT_ID, CLASS, SOURCE, MODULE_TYPE_ID) VALUES ($modId, '$this->name', '$this->description', $this->version, $mtid, '$classname', '$source', 3)");
+			}
+		}
+	}
+?>

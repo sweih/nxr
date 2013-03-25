@@ -1,0 +1,131 @@
+/* ThemeNXMenu Style Sheet */
+
+.ThemeNXMenu,.ThemeNXSubMenuTable
+{
+	cursor:		default;
+	font-family:	Arial;
+	font-size:	12px;
+
+	padding:	3px;
+	border:		0;
+	white-space:	nowrap;
+}
+
+.ThemeNXMenu {
+}
+
+.ThemeNXSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0;
+	padding:	4px;
+
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#f0f0f0, Direction=135, Strength=1);
+}
+
+.ThemeNXSubMenuTable
+{
+	border:		1px solid #e0e0e0;
+	background-color:	white;
+}
+
+.ThemeNXSubMenuTable td
+{
+	white-space:	nowrap;
+	padding: 4px;
+}
+
+.ThemeNXMainItem,.ThemeNXMainItemHover,.ThemeNXMainItemActive,
+.ThemeNXMenuItem,.ThemeNXMenuItemHover,.ThemeNXMenuItemActive
+{	
+    padding-left:	10px;
+	padding-right:	10px;
+	white-space:	nowrap;
+}
+
+.ThemeNXMainItemHover,.ThemeNXMainItemActive,
+.ThemeNXMenuItemHover,.ThemeNXMenuItemActive
+{
+	color:		#990000;	
+}
+
+.ThemeNXMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #f9f9f9;
+}
+
+.ThemeNXMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #e0e0e0;
+}
+
+
+
+.ThemeNXMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNXMenuItemHover seq2,
+.ThemeNXMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNXMenuItem .seq2,
+.ThemeNXMenuItemHover .seq1,
+.ThemeNXMenuItemActive .seq1
+{
+	display:	none;
+}
+
+/*- Mainmenubox -*/
+div#mainmenu {
+  float:none;
+  margin: 0px;
+  width: 1000px;  
+  color:#333333; 
+}
+
+#mainmenuleft {
+  height: 45px;
+  width:20px;
+  float: left;
+  background-image:url(menuleft.jpg);
+  background-repeat:no-repeat;
+}
+
+#mainmenuright {
+  height: 45px;
+  width:40px;
+  float: left;
+  background-image:url(menuright.jpg);
+  background-repeat:no-repeat;
+}
+
+#mainmenucenter {
+  height:45px;
+  padding-top:12px;
+  width:940px;
+  background-image:url(menu.jpg);
+  float:left;
+  background-repeat:repeat-x;
+}
+

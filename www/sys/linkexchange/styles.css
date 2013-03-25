@@ -1,0 +1,130 @@
+a.home {
+	border: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+a.home:active {
+	border: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+a.home:hover {
+	border: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+a.home:visited {
+	border: 1px solid #ffffff;
+	text-decoration: none;
+}
+
+body {
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+}
+
+input,textarea {
+	background-color: #ffffff;
+	border: 1px solid #c0c0c0;
+	color: #000000;
+	font-family: verdana;
+	font-size: 80%;
+	margin: 0px 0px 0px 10px;
+	padding: 1px 0px 1px 3px;
+	width: 300px;
+}
+
+input.error, textarea.error {
+	color: #000000;
+	background-color: #f5731d;
+}
+
+input.reset {
+	background-color: #ffffff;
+	border: 1px solid #0072bc;
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	width: 100px;
+}
+
+input.send {
+	background-color: #ffffff;
+	border: 1px solid #0072bc;
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: bold;
+	width: 100px;
+}
+
+
+table {
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+}
+
+td {
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+td.formtext {
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 0px 12px 0px;
+	text-align: right;
+	text-decoration: none;
+}
+
+td.formtexttitle {
+	color: #0072bc;
+	font-family: verdana;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0px 0px 24px 0px;
+	text-decoration: none;
+}
+
+td.formtext2 {
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0px 0px 12px 0px;
+	text-decoration: none;
+}
+
+td.formtext3 {
+	color: #000000;
+	font-family: verdana;
+	font-size: 11px;
+	padding: 0px 0px 12px 0px;
+	text-align: right;
+	text-decoration: none;
+}
+
+tr {
+	vertical-align: top;
+}
+
+.basefontblue {
+	color: #0072bc;
+	font-family: verdana;
+	font-size: 11px;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.error {
+	color: #f5731d;
+}

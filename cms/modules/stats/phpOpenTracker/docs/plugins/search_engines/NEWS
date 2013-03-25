@@ -1,0 +1,63 @@
+(+ Added, * Changed, - Removed, ! Note)
+
+27-Feb-2003, Version 1.1.0
+
+  + Added combined statistics query.
+
+  + Synched with phpOpenTracker 1.1.0 to leverage the new generic system
+    to constrain phpOpenTracker API queries to visitor groups.
+
+  * Changed the plugins API, have a look at the README for details.
+
+08-Jan-2003, Version 1.0.5
+
+  * Synched with phpOpenTracker 1.0.6.
+
+21-Dec-2002, Version 1.0.4
+
+  * Fixed two broken rules in conf/search_engines.group.ini.
+
+10-Dec-2002, Version 1.0.3
+
+  * Packaged by accident the wrong version of the plugin for the
+    1.0.2 release.
+
+09-Dec-2002, Version 1.0.2
+
+  * Synched parser rules with ModLogAn (CVS 09-Dec-2002).
+
+23-Nov-2002, Version 1.0.1
+
+  * Fixed a bug that prevented correct operation with Zend Engine 1.
+
+03-Nov-2002, Version 1.0.0
+
+  * The URL parser has been rewritten from scratch.
+
+  ! First "final" release.
+
+01-Sep-2002, Version 0.9.12
+
+  * Bail out, if "match.searchengines.php" cannot be opened.
+
+01-Sep-2002, Version 0.9.11
+
+  * Sync with phpOpenTracker 0.9.11.
+
+30-Jun-2002, Version 0.9.10
+
+  + Added database schema for MS SQL Server 2000.
+
+  * Fixed MySQL database schema.
+
+  * Fixed bug in phpOpenTracker API plugin that produced
+    useless statistics.
+
+03-May-2002, Version 1.0.0-RC2
+
+  * Sync with phpOpenTracker 1.0.0-RC2.
+
+
+20-Apr-2002, Version 1.0.0-RC1
+
+  * Initial independent release.

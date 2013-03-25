@@ -1,0 +1,115 @@
+body,td,p { color: #000000;
+font-family:  Arial, sans-serif;
+font-size: 12px;
+line-height: 18px;
+margin: 0px;
+padding: 0px;
+}
+
+/*- Sets the width of the page  -*/
+#maindiv {
+  align:center;
+  width:1030px;
+  padding: 10px 20px 10px 20px;
+}
+
+
+
+a {
+color: #666666;
+text-decoration: underline;
+}
+
+a:hover {color: #333333;
+text-decoration: underline;}
+
+
+h2 {
+padding-top: 5px;;
+font-size: 18pt;
+line-height: 22pt;
+font-family: Arial, sans-serif;
+text-align: left;}
+
+h1 {
+font-size: 16pt;
+line-height:20pt;
+font-family: Arial, sans-serif;
+text-align: left;
+}
+
+h3 {
+  font-size:1.4em;
+  line-height:1.5em
+  padding:0px;
+  margin:0px;
+}
+
+h4 {
+  font-size:1.2em;
+  line-height:1.4em;
+  color: #999999;
+  padding:0px;
+  margin:0px;
+}
+
+
+
+li.sitemap {
+  padding:0px;
+  margin:0px;
+}
+
+ul.sitemap {
+  padding:0px 0px 0px 10px;
+  margin:0px 0px 0px 20px;
+}
+
+#content {  
+  padding-left:10px;
+  float:left;  
+  width:600px;
+}
+
+#footerbox {
+  clear:both;
+}
+
+#footerline {
+  clear:both;
+  border-top: 1px solid #e0e0e0;
+  padding: 5px;  
+}
+
+
+#footerline table td {
+  color: #666666;
+  font-size: 12px;
+}
+
+#sidebar {
+  width:200px;
+  margin-left:10px;
+  margin-top:70px;
+  margin-right:20px;
+  float:right;  
+}
+
+#sidemenu {
+  float:left;
+  width:150px;
+  color:#666666;
+  margin: 100px 20px 30px 10px;    
+}
+
+#sidemenu a {
+  text-decoration:none;
+  color: #666666;
+  padding-left:5px;
+}
+
+#sidemenu a:hover {
+  text-decoration:none;
+  color: #990000;
+  padding-left:5px;
+}

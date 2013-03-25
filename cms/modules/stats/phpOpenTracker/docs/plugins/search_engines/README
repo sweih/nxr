@@ -1,0 +1,80 @@
+$Id: README,v 1.1 2003/09/01 17:19:33 sven_weih Exp $
+
+SYNOPSIS
+
+  This plugin stores information about what search engine was queried 
+  for which keywords into a separate table. The phpOpenTracker API is 
+  extended to provide statistical analysis on the most commonly used 
+  search engine and / or the most commonly used keywords to find the 
+  site tracked by phpOpenTracker.
+
+INSTALLATION
+
+  1.) Either copy the files from this distribution archive to
+      the respective directories of your phpOpenTracker installation
+      directory, or, and this is the prefered way, use the PEAR Installer
+
+        pear install phpOpenTracker_Search_Engines_Plugin-X.X.X.tar.gz
+
+      If you already installed a previous version of this plugin, you 
+      may want to upgrade it with  
+
+        pear upgrade phpOpenTracker_Search_Engines_Plugin-X.X.X.tar.gz
+
+  2.) Create the pot_search_engines table in the database configured
+      for use with phpOpenTracker.
+
+  3.) Enable the plugin in your phpOpenTracker.ini file.
+
+      If you don't have enabled any other plugins yet, change the line
+
+        logging_engine_plugins = 
+
+      to
+
+        logging_engine_plugins = search_engines
+
+      If you have already other plugins enabled, simply add
+
+        ,search_engines
+
+USAGE
+
+  The data collected by this plugin can be accessed through the
+  top_search_engines and top_search_keywords calls, that are
+  added to the phpOpenTracker API:
+
+    <?php
+    require 'phpOpenTracker.php';
+
+    $topSearchEngines = phpOpenTracker::get(
+      array(
+        'api_call' => 'search_engines',
+        'what'     => 'top_search_engines',
+        'range'    => 'total',
+        'limit'    => 10
+      )
+    );
+
+    $topSearchKeywords = phpOpenTracker::get(
+      array(
+        'api_call' => 'search_engines',
+        'what'     => 'top_search_keywords',
+        'range'    => 'total',
+        'limit'    => 10
+      )
+    );
+
+    $combinedStatistics = phpOpenTracker::get(
+      array(
+        'api_call' => 'search_engines',
+        'what'     => 'combined_statistics',
+        'range'    => 'total',
+        'limit'    => 10
+      )
+    );
+
+    print_r($topSearchEngines);
+    print_r($topSearchKeywords);
+    print_r($combinedStatistics);
+    ?>
