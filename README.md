@@ -1,4 +1,0 @@
-nxr
-===
-
-NX Revolution CMS
