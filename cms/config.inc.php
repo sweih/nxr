@@ -1,7 +1,8 @@
 <?
 	/**********************************************************************
 	 *	N/X - Web Content Management System
-	 *	Copyright 2002-2007 Sven Weih, 
+	 *	Copyright 2002 Sven Weih, FZI Research Center for Information Technologies
+	 *	www.fzi.de
 	 *
 	 *	This file is part of N/X.
 	 *	The initial has been setup as a small diploma thesis (Studienarbeit) at the FZI.
@@ -24,9 +25,9 @@
 
 	// Database variables.
 	$c["dbhost"] = "localhost";  				// name of the mysql-Database. Standard-port is used.
-	$c["database"] = "nxnov";   					// name of the database. 
-	$c["dbuser"] = "root";       				// name of the database user.
-	$c["dbpasswd"] = "test";         			// password of the database user.
+	$c["database"] = "nxdev2";   					// name of the database. 
+	$c["dbuser"] = "nxdev2";       				// name of the database user.
+	$c["dbpasswd"] = "nxdev2";         			// password of the database user.
 	$c["dbdriver"] = "mysql";    				// type of your database. Do not change.
 	$c["dbnow"] = "NOW()";       				// for future versions. Do not change.
 	$c["dbcode"] = "3dYqpm8UhF"; 				// for future versions. Do not change.
@@ -47,11 +48,11 @@
 	$c["standardencoding"] = "text/html; charset=utf-8"; // set standard encoding scheme for the Website
 
 	// Static Cache (generate html-files)
-	$c["renderstatichtml"] = true;              // enable Rendering of Static HTML-Code (Caching)
+	$c["renderstatichtml"] = false;              // enable Rendering of Static HTML-Code (Caching)
 
 	// Dynamic Cache
-	$JPCACHE_ON = true;    					// Turn dynamic page caching on/off
-	$JPCACHE_TIME = 3;   						// Default number of seconds to cache a page
+	$JPCACHE_ON = false;    					// Turn dynamic page caching on/off
+	$JPCACHE_TIME = 3600;   						// Default number of seconds to cache a page
 	$JPCACHE_USE_GZIP = 0; 						// Whether or not to use GZIP for transmission of the page to a browser
 
 	// CDS-Query-Cache
@@ -70,11 +71,7 @@
 
 	// Syndication
 	$c["provider"] = "localhost";				 // this is used for exchanging content or data. 
-	
-	// Email
-	$c["webmastermail"] = 'webmaster@mail.address';
-	
-	// Do not change when it has been setup once!
+												 // Do not change when it has been setup once!
 	
 	// AUTH
 	$c["disalbehostchecking"] = false; 			 // Disabled auth-check, if user still has same IP or host-address. 
@@ -113,10 +110,10 @@
 	// base paths
 	// attention: please read the readme file to know, which paths must be set writable! 
 	// (all www and wwwdev + subfolders)
-	$c["basepath"] = "C:/Web/nx5/";				// path of your nx-home-folder on harddrive. ends with slash.
-	$c["basedocroot"] = "/nx5/";		// docroot on your webserver, which corresponds 
+	$c["basepath"] = "/var/www/vhosts/nxsystems.org/nxdev/nxr/";				// path of your nx-home-folder on harddrive. ends with slash.
+	$c["basedocroot"] = "/nxr/";		// docroot on your webserver, which corresponds 
 											// to the path you just entered. starts and ends with a slash!
-	$c["host"] = "http://localhost"; 				// address of your web-server. Ends without slash
+	$c["host"] = "http://www.dev.nxsystems.org"; 				// address of your web-server. Ends without slash
 	$c["cmsfolder"] = "cms";					// name or relative path of the folder cms, if renamed.
     $c["temphomepage"] = "wwwdev";				// name of relative path the folder wwwdev, if renamed.	
 	$c["livehomepage"] = "www";					// name of relative path the folder www, if renamed.	
@@ -226,7 +223,6 @@
 	require_once $c["path"] . "api/tools/datatypes.php";
 	require_once $c["path"] . "plugin/plugin.inc.php";
 	require_once $c["path"] . "api/database/lib.inc.php";
-	require_once $c["path"] . "ext/adodb/session/adodb-session2.php";
 	require_once $c["path"] . "api/auth/lib.inc.php";
 	require_once $c["path"] . "api/userinterface/form/pagestate.php";
 	require_once $c["path"] . "api/common/lib.inc.php";
@@ -236,7 +232,6 @@
 	require_once $c["path"] . "api/userinterface/lib.inc.php";
 	require_once $c["path"] . "api/cms/lib.inc.php";
 	require_once $c["path"] . "api/common/prepare.php";
-   	require_once $c["path"] . "api/xml/lib.inc.php";
    	require_once $c["path"] . "api/parser/lib.inc.php";
 	
 
