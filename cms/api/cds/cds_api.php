@@ -78,11 +78,11 @@
 				// if the request to this expired page comes from our own host, we assume it comes from within our live site...
 				if (stristr($_SERVER["HTTP_REFERER"], $c["host"])) {
 					// so we'll clear the JPCache to make sure all pages get a new menu ;)
-					clearJPCache();
-					echo "<!-- JPCache has been cleared -->";
+					//clearJPCache();
+					//echo "<!-- JPCache has been cleared -->";
 					// and we'll switch off jpcache for the moment to prevent this message from being cached :)
-					global $JPCACHE_ON;
-					$JPCACHE_ON = false;
+					//global $JPCACHE_ON;
+					//$JPCACHE_ON = false;
 				}
 				//exit;
 			}		
@@ -128,7 +128,7 @@
  	  	  return true;
  	  	} else {
  	  		$user_id = getDBCell("auth_user", "user_id", "password='$password' AND UPPER(email)=UPPER('$email')"); 	  	
- 	  		if ($user_id != "")
+ 	  		if ($user_id != "") {
  	  		  $this->loginError = 'confirm';
  	  		} else {
  	  		  $user_id= getDBCell("auth_user", "user_id", "UPPER(email)=UPPER('$email')");
